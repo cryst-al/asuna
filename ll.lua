@@ -72,7 +72,7 @@ local drag = function(obj, latency)
 end
 
 local library = {
-    version = "2.0.2",
+    version = "",
     title = title or "Asuna " .. tostring(math.random(1,366)),
     fps = 0,
     rank = "private"
@@ -195,7 +195,7 @@ function library:Watermark(text)
         end
     end
 
-    tetx = text or "Asuna v2"
+    tetx = text or "Asuna"
 
     local watermark = Instance.new("ScreenGui")
     local watermarkPadding = Instance.new("UIPadding")
@@ -319,7 +319,7 @@ function library:Watermark(text)
 
     local WatermarkFunctions = {}
     function WatermarkFunctions:AddWatermark(text)
-        tetx = text or "Asuna v2"
+        tetx = text or "Asuna"
 
         local edge = Instance.new("Frame")
         local edgeCorner = Instance.new("UICorner")
@@ -338,7 +338,7 @@ function library:Watermark(text)
         edge.Parent = watermark
         edge.AnchorPoint = Vector2.new(0.5, 0.5)
         edge.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-        edge.Position = UDim2.new(0.5, 0, -0.03, 0)
+        edge.Position = UDim2.new(0.5, 110, -0.03, 0)
         edge.Size = UDim2.new(0, 0, 0, 26)
         edge.BackgroundTransparency = 1
     
